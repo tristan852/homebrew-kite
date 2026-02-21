@@ -5,10 +5,10 @@ class Kite < Formula
 
   if OS.mac?
     url "https://github.com/tristan852/kite/releases/download/v1.16.3/kite-1.16.3-macos-x64.tar.gz"
-    sha256 "8E3FE5B5D2DFBC9AA6F4C70C66F1B016A8068DB01194615E034AB372B4C2BD9E"
+    sha256 "DC7B999DCD1E6B2DD58D4B33B33CDF24F9ECBC9DA8B44756241AF5122F60C125"
   elsif OS.linux?
     url "https://github.com/tristan852/kite/releases/download/v1.16.3/kite-1.16.3-linux-x64.tar.gz"
-    sha256 "3FC22CC6190DFA38B10B3B8BB50C4C6873399A5AD92B68DBD32613D01E11DB46"
+    sha256 "F209C0454EF5EA37E04E2AC34A828E34B45B4EE5AA1F39D5DAF45D3278569738"
   end
 
   def install
