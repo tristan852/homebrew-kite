@@ -1,14 +1,14 @@
 class Kite < Formula
   desc "A Connect Four solver"
   homepage "https://github.com/tristan852/kite"
-  version "1.17.0"
+  version "1.17.1"
 
   if OS.mac?
-    url "https://github.com/tristan852/kite/releases/download/v1.17.0/kite-1.17.0-macos-x64.tar.gz"
-    sha256 "DC7B999DCD1E6B2DD58D4B33B33CDF24F9ECBC9DA8B44756241AF5122F60C125"
+    url "https://github.com/tristan852/kite/releases/download/v1.17.1/kite-1.17.1-macos-x64.tar.gz"
+    sha256 "CBD71EBF596EF98C129CE0C7AA60EFD7F7843373D36F077BC4D727445553E4C4"
   elsif OS.linux?
-    url "https://github.com/tristan852/kite/releases/download/v1.17.0/kite-1.17.0-linux-x64.tar.gz"
-    sha256 "F209C0454EF5EA37E04E2AC34A828E34B45B4EE5AA1F39D5DAF45D3278569738"
+    url "https://github.com/tristan852/kite/releases/download/v1.17.1/kite-1.17.1-linux-x64.tar.gz"
+    sha256 "6FECA24B8A5FEACEFDDC6E915B7E5A35A897DB86887409BCE24D6A460E67D002"
   end
 
   def install
@@ -17,6 +17,6 @@ class Kite < Formula
 
   test do
     output = shell_output("#{bin}/kite --version")
-    assert_match "1.17.0", output
+    assert_match "1.17.1", output
   end
 end
